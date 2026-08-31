@@ -1,13 +1,13 @@
 ---
 name: deep-fact-search
-description: 深度事实穿透检索与零幻觉校验工具。用于电影剧情完整剧透、复杂技术排查、冷门事件脉络核实。
+description: Deep fact penetration and zero-hallucination verification tool for plot twists and facts.
 ---
 
-# deep-fact-search 规范
+# deep-fact-search Protocol
 
-当你需要深度核实影视剧情、反转细节、逻辑漏洞或复杂事实时，请遵循以下流程：
+When verifying plots, hidden endings, or complex facts:
 
-1. 不要使用宣发通稿和100字以内的浅层摘要。
-2. 运行 scripts/extract_facts.py 提取长篇正文中的事实锚点。
-3. 遵循孤证不立原则，至少需要两个独立来源印证。
-4. 遇到未实装或资料未提及的内容，直接声明未明确提及，严禁脑补。
+1. Never use pre-release PR articles or shallow snippets under 100 words.
+2. Run scripts/extract_facts.py to extract factual anchors from full-text reviews.
+3. Cross-verify with at least two independent sources.
+4. If a fact is unreleased or unmentioned in the source texts, explicitly state 'Unverified/Unknown' and NEVER guess or hallucinate.
